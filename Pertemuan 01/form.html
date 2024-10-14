@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penggunaan tag Form</title>
+</head>
+<body>
+    <h4>Contoh dari modul :</h4>
+    <form action="form.html" method="get">
+
+        Nama : <input type="text" name="nama" value="Nama ada"/>
+        Password : <input type="password" name="password"/>
+        <br/>
+
+        Jenis Kelamin :
+        <input type="radio" name="jenis_kelamin" value="laki-laki" checked/>
+        Laki-Laki
+        <input type="radio" name="jenis_kelamin" value="perempuan"/>
+        Perempuan
+        <br/>
+
+        Hobi : <input type="checkbox" name="hobi_baca"/> Membaca Buku
+        <input type="checkbox" name="hobi_makan"/> Makan
+        <input type="checkbox" name="hobi_menulis" checked/> Menulis
+        <br/>
+
+        Asal Kota :
+        <select name="asal_kota">
+            <option value=" Kota Jakarta">Jakarta</option>
+            <option value=" Kota Surabaya">Surabaya</option>
+            <option value=" Kota Bandung" selected>Bandung</option>
+        </select>
+
+        <br/>
+
+        Komentar Anda:
+        <br>
+        <textarea name="komentar" rows="8" cols="20">
+            Silahkan masukkan Komentar anda
+            </textarea>
+        </textarea>
+        <br/>
+
+        <input type="submit" value="Kirim!">
+
+    </form>
+
+<!-- action = untuk menentukan aksi yang akan dilakukan saat data dikirim -->
+<!-- type = type dari field -->
+<!-- name =   nama dari field yang akan menjadi kunci dan variabel di dalam program-->
+<!-- fieldset = garis -->
+<!-- palcehoder = menampilkan teks sementara -->
+<!-- value = nilai default pada field -->
+
+<!-- Berikut Hasil Latihan : -->
+    <hr>
+    <h3>Contoh Form register :</h3>
+
+    <form action="form.html" method="post">
+        <fieldset>
+            <legend>Formulir Regrestasi</legend>
+            <p>
+                <label for="">Nama:</label>
+                <input type="text" name="nama" placeholder="Nama lengkap..."/>
+            </p>
+            <p>
+                <label for="">Username:</label>
+                <input type="text" name="username" placeholder="Username..."/>
+            </p>
+            <p>
+                <label for="">Email:</label>
+                <input type="email" name="email" placeholder="Your email...">
+            </p>
+            <p>
+                <label for="">Password:</label>
+                <input type="password" name="password" placeholder="Password..."/>
+            </p>
+            <p>
+                <label for="">Jenis Kelamin:</label>
+                <label for=""><input type="radio" name="jenis_kelamin" value="laki-laki"/>Laki-Laki</label>
+                <label for=""><input type="radio" name="jenis_kelamin" value="perempuan"/>Perempuan</label>
+            </p>
+            <p>
+                <label for="">Agama:</label>
+                <select name="agama" id="">
+                    <option value="Islam">Islam</option>
+                    <option value="Kristen">Kristen</option>
+                    <option value="Katolik">Katolik</option>
+                    <option value="Hindu">Hindu</option>
+                    <option value="Budha">Budha</option>
+                </select>
+            </p>
+            <p>
+                <label for="">Alamat:</label>
+                <textarea name="alamat" placeholder="Alamat lengkap..."></textarea>
+            </p>
+            <p>
+                <input type="submit" name="submit" value="Daftar"/>
+            </p>
+        </fieldset>
+
+    </form>
+
+
+</body>
+</html>
