@@ -1,31 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contoh penggunaan Span Div</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Perbedaan Span dan Div</h1>
     <h2>Div</h2>
-    <p>Digunakan untuk membagi halaman menjadfi bagian-bagian yang berbeda.
-        <br> contoh : Header, konten utama, dan fotter.
+    <p>
+      Digunakan untuk membagi halaman menjadi bagian-bagian yang berbeda.
+      <br />
+      contoh : Header, konten utama, dan fotter.
     </p>
     <h3>Contoh:</h3>
-    <div style="background-color: lightblue; padding: 10px;">
-        Ini adalah paragraf yang dibungkus oleh div.
+    <div style="background-color: lightblue; padding: 10px">
+      Ini adalah div pertama. Lorem ipsum dolor sit
+      amet, consectetur adipiscing elit. Proin felis enim, faucibus quis orci
+      eget, maximus dapibus tellus. Donec sapien urna, sollicitudin ac odio a,
+      viverra tincidunt augue. In ultricies erat leo, vitae accumsan ante
+      tristique finibus. Quisque quis hendrerit ipsum. Quisque nisl tortor,
+      dignissim ut auctor quis, tempor elementum ligula. Duis eget ex facilisis,
+      vulputate tellus quis, vehicula sem. Sed malesuada gravida tincidunt.
+      Vivamus ligula diam, tempus porttitor orci eget, eleifend facilisis
+      sapien. Aenean facilisis pretium ipsum. Integer nec metus fermentum,
+      iaculis nunc nec, vehicula turpis. Vivamus fermentum ornare justo sed
+      sagittis. Duis sagittis ligula et eleifend dignissim. Sed et sapien in
+      ligula sollicitudin tempus.
     </div>
 
-    <hr>
-    <h2>Span</h2>
-    <p>Digunakan untuk memformat teks saja atau menyoroti kata dalam suatu paragraf </p>
-    <h3>Contoh:</h3>
-    <span style="background-color: coral;">
-        ini adalah paragraf yang dibungkus oleh span.
-    </span>
+    <div style="background-color: rgb(206, 173, 230); padding: 15px">
+      Ini adalah div kedua. Lorem ipsum dolor sit
+      amet, consectetur adipiscing elit. Proin felis enim, faucibus quis orci
+      eget, maximus dapibus tellus. Donec sapien urna, sollicitudin ac odio a,
+      viverra tincidunt augue. In ultricies erat leo, vitae accumsan ante
+      tristique finibus.
+      <ol>
+        <li>Banana</li>
+        <li>Apple</li>
+        <li>Pear</li>
+      </ol>
+    </div>
 
-    <hr>
+    <h2>Span</h2>
+    <p>
+      Digunakan untuk memformat teks saja atau menyoroti kata dalam suatu
+      paragraf
+    </p>
+    <h3>Contoh:</h3>
+    <p>
+      Sed sagittis a lacus id venenatis. Nullam viverra aliquam scelerisque.
+      Integer mattis ipsum rutrum arcu elementum, sed ultrices mi consectetur.
+      Nam id interdum elit, vel tempus ante. Fusce vel congue dui. Mauris id
+      nisi ac ligula consectetur aliquet. In et luctus eros. Mauris eget
+      ultrices elit. <span style="background-color: coral; color: rgb(0, 0, 0);">Ini teks di bungkus span</span> 
+      Etiam ac accumsan nisl. Quisque gravida libero ac velit elementum dapibus. Praesent
+      eu mollis enim. Etiam hendrerit leo in dui consequat, eget egestas sapien
+      egestas. <span style="color: azure; background-color: darkblue;">Duis sagittis est ut felis pharetra auctor</span>. Fusce faucibus mauris
+      dui, ac dapibus tortor sollicitudin sed. Proin ut volutpat urna, eu
+      maximus nisi.
+    </p>
+
+    <hr />
     <h2>Contoh dari Modul</h2>
-    
-</body>
+    <div id="header">
+        <h1>Judul Website</h1>
+        <img src="logo_website.jpg" />
+      </div>
+        
+      <div id="menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+        
+      <div id="content">
+        <div id="article_1">
+          <p>......Isi dari artikel.....</p>
+        </div>
+      </div>
+        
+      <div id="sidebar">
+        <h1>Artikel Terbaru</h1>
+          <ul>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+          </ul>
+        </div>
+        
+      <div id="footer">
+        <p>Footer - Copyright Duniailkom 2014</p>
+      </div>
+
+  </body>
 </html>

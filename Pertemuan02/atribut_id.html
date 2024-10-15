@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Penggunaan id dan link</title>
+  </head>
+  <body>
+    <h1 id="penjelasan">Internal Link ke Bagian Lain Dokumen</h1>
+    <p>
+      Internal link adalah sebuah tautan yang menghubungkan satu bagian dalam
+      sebuah halaman HTML dengan bagian lain dalam halaman yang sama. Ini sangat
+      berguna untuk membuat navigasi di dalam halaman yang panjang atau
+      kompleks, seperti dokumen yang memiliki banyak bagian atau konten yang
+      ingin diorganisir dengan baik.
+    </p>
+
+    <h3 id="tutor">Cara membuat :</h3>
+    <ol>
+      <li>Pilih elemen HTML yang ingin dijadikan tujuan link (misalnya paragraf,heading, gambar).</li>
+      <li>Tambahkan atribut id pada elemen tersebut. id harus unik dalam satu halaman.</li>
+      <li>Gunakan tag <b>a</b> untuk membuat link.</li>
+      <li>Pada atribut href, gunakan tanda pagar (#) diikuti dengan nilai id darielemen tujuan.</li>
+    </ol>
+
+    <hr />
+    <h3>Contoh :</h3>
+
+    <h1>Judul Utama</h1>
+    <!-- ini adalah bagian shortcut atau internal linknya -->
+    <h2>Menu:</h2>
+    <ul>
+        <li><a href="#section-satu">Bagian Pertama</a></li>
+        <li><a href="#section-dua">Bagian Kedua</a></li>
+        <li><a href="#penjelasan">Penjelasan Internal Link</a></li>
+        <li><a href="#tutor">Cara Membuat Internal Link</a></li>
+    </ul>
+
+    <!-- ini adalah id pada halaman -->
+    <h2 id="section-satu">Bagian Pertama</h2>  
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin felis enim, faucibus quis orci eget, 
+        maximus dapibus tellus. Donec sapien urna, sollicitudin ac odio a, viverra tincidunt augue. 
+        In ultricies erat leo, vitae accumsan ante tristique finibus. Quisque quis hendrerit ipsum. 
+        Quisque nisl tortor, dignissim ut auctor quis, tempor elementum ligula. Duis eget ex facilisis, 
+        vulputate tellus quis, vehicula sem. Sed malesuada gravida tincidunt. Vivamus ligula diam, tempus 
+        porttitor orci eget, eleifend facilisis sapien. Aenean facilisis pretium ipsum. Integer nec metus 
+        fermentum, iaculis nunc nec, vehicula turpis. Vivamus fermentum ornare justo sed sagittis. 
+        Duis sagittis ligula et eleifend dignissim. Sed et sapien in ligula sollicitudin tempus.
+    </p>
+    <p>Donec at urna eget erat sagittis venenatis. Aenean et ornare leo. Quisque ornare mi purus, 
+        blandit congue lacus ullamcorper nec. Nulla venenatis ex sed ex commodo luctus. Duis sollicitudin 
+        tempor lacinia. Sed tempor eros et feugiat facilisis. Duis imperdiet iaculis aliquam. Donec non eros 
+        eros. Fusce tincidunt eros eu rutrum maximus. Quisque rhoncus quis felis a varius.
+    </p>
+    <p>Nulla ac ligula dui. Duis diam urna, sagittis semper nisi quis, convallis condimentum arcu. 
+        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; 
+        Pellentesque eu ullamcorper tellus. Nunc dui sem, ullamcorper eget justo a, tincidunt aliquet tortor. 
+        Integer ut commodo ligula. Nam molestie condimentum elementum. Fusce quis quam lobortis, facilisis dui ut, 
+        tincidunt ante. In hac habitasse platea dictumst.
+    </p>
+
+    <h2 id="section-dua">Bagian Kedua</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin felis enim, faucibus quis orci eget, 
+        maximus dapibus tellus. Donec sapien urna, sollicitudin ac odio a, viverra tincidunt augue. 
+        In ultricies erat leo, vitae accumsan ante tristique finibus. Quisque quis hendrerit ipsum. 
+        Quisque nisl tortor, dignissim ut auctor quis, tempor elementum ligula. Duis eget ex facilisis, 
+        vulputate tellus quis, vehicula sem. Sed malesuada gravida tincidunt. Vivamus ligula diam, tempus 
+        porttitor orci eget, eleifend facilisis sapien. Aenean facilisis pretium ipsum. Integer nec metus 
+        fermentum, iaculis nunc nec, vehicula turpis. Vivamus fermentum ornare justo sed sagittis. 
+        Duis sagittis ligula et eleifend dignissim. Sed et sapien in ligula sollicitudin tempus.
+    </p>
+
+  </body>
+</html>
