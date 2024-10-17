@@ -25,7 +25,7 @@
     </ul>
 
     <h3>Contoh:</h3>
-    <img src="gambar/pecel.jpg" alt="Sego kikil" height="150" width="200" align="20"/>
+    <img src="gambar/pecel.jpg" alt="Sego kikil" class="pecel" />
 
     <h3>Border</h3>
     <p>
@@ -35,15 +35,33 @@
       berisi ukuran lebar garis tepi dalam satuan pixel.
     </p>
 
+    <style>
+      .pecel {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+      }
+
+      .tugu {
+        display: block;
+        border: "5";
+        width: 30%;
+      }
+    </style>
+
     <h3>Contoh:</h3>
-    <img src="gambar/tugu.jpg" alt="Ringin Contong" border="5" height="150"width="250"/>
+    <img src="gambar/tugu.jpg" alt="Ringin Contong" class="tugu" />
 
     <hr />
     <h2>Catatan penting !</h2>
     <p>
-      Meskipun atribut align dan border pada elemen HTML seperti sudah tidak disarankan dan 
-      umumnya tidak lagi berfungsi pada browser modern,
-      <b>baik align maupun border dapat dan sebaiknya diterapkan dalam file CSS</b>
+      Meskipun atribut align dan border pada elemen HTML seperti sudah tidak
+      disarankan dan umumnya tidak lagi berfungsi pada browser modern,
+      <b
+        >baik align maupun border dapat dan sebaiknya diterapkan dalam file
+        CSS</b
+      >
       untuk mengatur tampilan elemen secara lebih fleksibel dan efisien.
     </p>
     <p>untuk menggunakan css pada html, dibuat dulu class. ex class="body"</p>
