@@ -56,7 +56,7 @@ body {
 /* Header */
 /* Hero Section */
 .hero {
-    background-image: url('gambar/tugu.jpg'); /* Ganti dengan URL gambar background Anda */
+    background-image: url('gambar/tugu.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -164,7 +164,7 @@ body {
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: calc(33.333% - 20px); /* 3 cards in a row */
+    width: calc(33.333% - 20px); /* 3 card dalam 1 row */
     transition: transform 0.3s;
 }
 
@@ -197,17 +197,6 @@ body {
     color: #333;
 }
 
-@media screen and (max-width: 768px) {
-    .card {
-        width: calc(50% - 20px); /* 2 cards in a row on tablet */
-    }
-}
-
-@media screen and (max-width: 576px) {
-    .card {
-        width: 100%; /* 1 card in a row on mobile */
-    }
-}
 
 
 /* Penghargaan Section */
