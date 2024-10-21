@@ -3,136 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatiable" content="ie-edge" />
-    <title>Jombang Profile</title>
     <link rel="stylesheet" href="style.css" />
+    <title>Website Portofolio</title>
   </head>
   <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-      <div class="container">
-        <div class="logo">Jombang</div>
-        <ul class="nav-links">
-          <li><a href="#tentang">Tentang</a></li>
-          <li><a href="#wisata">Tempat Wisata</a></li>
-          <li><a href="#penghargaan">Penghargaan</a></li>
-          <li><a href="#kontak">Kontak</a></li>
-        </ul>
-      </div>
-    </nav>
-
     <!-- Header -->
-    <header class="hero">
-        <div class="overlay"></div>
-        <div class="hero-content">
-            <h1>Selamat Datang di Kabupaten Jombang</h1>
-            <p>Temukan informasi terkini dari Pemerintah Kabupaten Jombang</p>
-            <a href="#info" class="cta">Baca Selengkapnya</a>
-        </div>
+    <header class="header">
+      <a href="#" class="logo">Jombang.</a>
+
+      <nav class="navbar">
+        <a href="#" class="active">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Portofolio</a>
+        <a href="#">Contact</a>
+      </nav>
     </header>
 
-
-    <!-- Isi Konten -->
-    <!-- Tentang -->
-    <section id="tentang" class="content-section">
-      <div class="container">
-        <h1>Tentang Jombang</h1>
-        <div class="grid-tentang">
-            <div class="item-tentang">
-                <h3>Sejarah dan Budaya</h3>
-                <p>Kabupaten Jombang, terletak di bagian tengah Provinsi Jawa Timur dengan luas wilayah sekitar 1.159,50 km2 dengan jumlah penduduk sebanyak 1,3 juta jiwa. Jombang dikenal sebagai salah satu daerah yang memiliki peran penting dalam sejarah, budaya, dan pendidikan di Indonesia.</p>
-            </div>
-            <div class="item-tentang">
-                <h3>Potensi Alam</h3>
-                <p>Secara geografis, Jombang dikelilingi oleh pegunungan dan aliran sungai yang menjadikan daerah ini subur dan kaya akan hasil pertanian. Terbukti Jombang termasuk wilayah yang memberikan lumbung pangan setiap tahun tingkat nasional.</p>
-            </div>
-            <div class="item-tentang">
-                <h3>Pusat Pendidikan Islam</h3>
-                <p>Kabupaten Jombang memiliki sejarah yang beragam, salah satunya yakni sebagai tempat kelahiran Presiden ke-4 Indonesia, Abdurrahman Wahid (Gus Dur). Selain itu, Jombang juga dikenal dengan julukan "Kota Santri" karena menjadi pusat pendidikan agama Islam dengan banyak pondok pesantren berpengaruh, seperti Pondok Pesantren Tebuireng, yang didirikan oleh KH. Hasyim Asy'ari, pendiri Nahdlatul Ulama (NU).</p>
-            </div>
+    <!-- Home -->
+    <section class="home">
+      <div class="home-content">
+        <h1>Hi, saya adalah Layo</h1>
+        <h3>Frontend Developer</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores,
+          ullam! Eligendi asperiores dolores ex obcaecati delectus voluptatem
+          maxime dolor distinctio optio aut adipisci hic quos quia quasi
+          impedit, illo iste!
+        </p>
+        <div class="btn-box">
+          <a href="">Hire me</a>
+          <a href="">Let's talk</a>
         </div>
       </div>
     </section>
-
-    <!-- Wisata -->
-    <section id="wisata" class="content-section">
-      <div class="container">
-          <h2>Tempat Wisata</h2>
-          <div class="card-grid">
-            <!-- Card 1 -->
-            <div class="card">
-                <img src="gambar/banyumili.jpg" alt="Gambar Tempat Wisata 1">
-                <div class="card-content">
-                    <h3>Banyumili & P4S Etawa..</h3>
-                    <p><strong>Lokasi:</strong> Carangwulung, Wonosalam, Gondang</p>
-                    <p><strong>Rating:</strong> ⭐⭐⭐⭐ (4.1)</p>
-                    <p>Taman unik yang dipenuhi miniatur rumah beratap rumput & latar unik lainnya untuk tempat berfoto, dengan pemandangan alamnya yang indah dan suasana yang tenang.</p>
-                </div>
-            </div>
-            <!-- Card 2 -->
-            <div class="card">
-                <img src="gambar/durianPark.jpg" alt="Gambar Tempat Wisata 1">
-                <div class="card-content">
-                    <h3>De Durian Park</h3>
-                    <p><strong>Lokasi:</strong> Cemorosewu, Segunung, Wonosalam</p>
-                    <p><strong>Rating:</strong> ⭐⭐⭐⭐ (4.4)</p>
-                    <p>De Durian Park merupakan area kebun durian produktif, sekaligus agrowisata dan edukasi yang berlokasi di bawah Gunung Anjasmoro.</p>
-                </div>
-            </div>
-            <!-- Card 3 -->
-            <div class="card">
-                <img src="gambar/wisata.jpg" alt="Gambar Tempat Wisata 1">
-                <div class="card-content">
-                    <h3>Agrowisata Duran Duren</h3>
-                    <p><strong>Lokasi:</strong> 79V7+WP4, Notorejo, Wonosalam</p>
-                    <p><strong>Rating:</strong> ⭐⭐⭐⭐ (4.2)</p>
-                    <p>Bisa dibilang destinasi ini menawarkan paket lengkap. Selain keindahan alamnya, terdapat juga beragam wahana yang bisa dinikmati..</p>
-                </div>
-            </div>
-        
-      </div>
-    </section>
-
-    <!-- Penghargaan -->
-    <section class="penghargaan" id="penghargaan">
-        <h2>Penghargaan</h2>
-        <!-- List Penghargaan -->
-        <div class="penghargaan-list">
-            <div class="penghargaan-item">
-                <h3>Adipura Kategori Kota Sedang 2022</h3>
-                <p>Penghargaan ini diberikan oleh Kementerian Lingkungan Hidup dan Kehutanan (KLHK) kepada Kabupaten Jombang. 
-                    Penghargaan ini diserahkan kepada Bupati Jombang Hj. Mundjidah Wahab pada 28 Februari 2023.
-                </p>
-                <a href="https://www.jombangkab.go.id/berita/uncategorized/kabupaten-jombang-kembali-menerima-penghargaan-adipura-kategori-kota-sedang-1164">Baca Selengkapnya</a>
-            </div>
-
-            <div class="penghargaan-item">
-                <h3>Kabupaten Layak Anak Kategori Nindya 2023</h3>
-                <p>enghargaan ini diberikan kepada Kabupaten Jombang pada Malam Penganugerahan Apresiasi Kabupaten/Kota Layak 
-                    Anak (KLA) Tingkat Nasional Tahun 2023.</p>
-                <a href="https://www.instagram.com/jombang_kab/p/CvBGj3uSpI_/">Baca Selengkapnya</a>
-            </div>
-
-            <div class="penghargaan-item">
-                <h3>Penghargaan Nasional A/T/M 2024</h3>
-                <p>Pemerintah Kabupaten Jombang meraih penghargaan nasional di bidang kesehatan dalam upaya pencegahan dan 
-                    penanggulangan penyakit AIDS, Tuberculosis (TBC), dan Malaria (A/T/M) Tahun 2024.
-                </p>
-                <a href="https://rri.co.id/index.php/daerah/1010858/pemkab-jombang-raih-penghargaan-nasional-a-t-m-2024#:~:text=RRI.co.id%20%2D%20Pemkab,Nasional%20A/T/M%202024">Baca Selengkapnya</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer" id="kontak">
-      <div class="container">
-        <p>&copy; 2024 Jombang. All Rights Reserved.</p>
-        <div class="social-icons">
-          <a href="#"><img src="gambar/facebook.png" alt="Facebook" /></a>
-          <a href="#"><img src="gambar/twitter (1).png" alt="Twitter" /></a>
-          <a href="#"><img src="gambar/instagram.png" alt="Instagram" /></a>
-        </div>
-      </div>
-    </footer>
   </body>
 </html>
