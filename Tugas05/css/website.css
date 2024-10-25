@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding-top: 70px;
+}
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+/* Bagian navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 15px 30px;
+    position: fixed;
+    top: 0;
+    width: 90%;
+    z-index: 1000;
+}
+.logo h1 {
+    font-size: 1.5em;
+    color: black;
+}
+.nav-links {
+    list-style-type: none;
+    display: flex;
+}
+.nav-links li {
+    margin-left: 20px;
+}
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+.nav-links a:hover {
+    color: red; /* Warna button setelah ditekan */
+}
+
+/* Bagian Header */
+.header {
+    position: relative;
+    height: 400px; /* Sesuaikan tinggi dengan kebutuhan */
+    width: 100%;
+    overflow: hidden;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)); /* Gradasi kehitaman */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.isi-header{
+    position: relative;
+    color: #fff;
+    text-align: left;
+    z-index: 2;
+}
+.isi-header h1{
+    font-size: 36px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+.isi-header p{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.button{
+    background-color: #430000;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+.button a{
+    background-color: #1b3e50;
+    color: #fff;
+}
+.button a:hover{
+    background-color: #3c99f0;
+    color: #fff;
+}
+
+/* Bagian Isi kontent */
+.content {
+    display: flex;
+    margin: 20px 0;
+}
+
+/*  Bagian main content  */
+.main-content { 
+    flex: 4;
+    padding: 20px;
+    background-color: #e8e7e7;
+    margin-right: 10px;
+    padding: 20px;
+}
+.main-content img.content-image1{
+    width: 50%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+.main-content h2{
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+.main-content p{
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 8px;
+}
+
+
+/* Bagian Sidebar */
+.sidebar { 
+    flex: 1;
+    padding: 20px;
+    background-color: #e8e7e7;
+    color: #555;
+}
+/* Side-link */
+.side-link h3{
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #0d0d0d;
+}
+.side-link ul{
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 8px;
+}
+.side-link ul li{
+    margin-bottom: 5px;
+}
+.side-link ul li a{
+    color: #0d0d0d;
+    text-decoration: none;
+}
+.side-link a:hover{
+    text-decoration: underline;
+    color: red;
+}
+/* news-item */
+.popular-news h3 {
+    font-size: 18px;
+    margin-top: 70px;
+    margin-bottom: 10px;
+}
+.news-item{
+    display: block;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+.news-thumbnail{
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+.news-info a{
+    color: #0d0d0d;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.news-info a:hover{
+    text-decoration: underline;
+}
+.news-info p{
+    font-size: 10px;
+    color: #0d0d0d;
+    margin-top: 5px;
+}
+
+/* Bagian footer */
+.footer {
+    text-align: center;
+    padding: 5px;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+}
+.footer-content {
+    display: flex;               /* Flexbox untuk menata bagian-bagian footer */
+    justify-content: space-around;/* Mengatur jarak antar bagian */
+    align-items: flex-start;     /* Teks berada di bagian atas tiap bagian */
+    flex-wrap: wrap;             /* Flexbox akan otomatis melipat jika layar kecil */
+}
+
+.footer-section {
+    width: 30%;                  /* Setiap bagian footer mengambil lebar 30% */
+    margin-bottom: 20px;         /* Spasi bawah tiap bagian pada layar kecil */
+}
+
+.footer-section h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.footer-section p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+/* Bagian untuk ikon media sosial */
+.social-media {
+    list-style-type: none;       
+    padding: 0;
+    margin: 0;
+}
+
+.social-media li {
+    display: inline-block;       
+    margin: 0 10px;            
+}
+
+.social-media li a img {
+    width: 24px;                
+    height: 24px;
+}
+
+/* Hak cipta di bagian bawah */
+.footer-copyright {
+    font-size: 12px;
+    margin-top: 20px;
+    color: #bbb;      
+}
