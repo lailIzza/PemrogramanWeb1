@@ -49,7 +49,7 @@ body {
 /* Bagian Header */
 .header {
     position: relative;
-    height: 400px; /* Sesuaikan tinggi dengan kebutuhan */
+    height: 400px; 
     width: 100%;
     overflow: hidden;
 }
@@ -87,7 +87,7 @@ body {
     font-size: 20px;
     margin-bottom: 20px;
 }
-.button{
+.button {
     background-color: #430000;
     color: #fff;
     padding: 10px 20px;
@@ -96,12 +96,8 @@ body {
     font-size: 1rem;
     transition: background-color 0.3s ease;
 }
-.button a{
-    background-color: #1b3e50;
-    color: #fff;
-}
-.button a:hover{
-    background-color: #3c99f0;
+.button:hover{
+    background-color: red;
     color: #fff;
 }
 
@@ -115,7 +111,7 @@ body {
 .main-content { 
     flex: 4;
     padding: 20px;
-    background-color: #e8e7e7;
+    background-color: white;
     margin-right: 10px;
     padding: 20px;
 }
@@ -142,8 +138,8 @@ body {
 .sidebar { 
     flex: 1;
     padding: 20px;
-    background-color: #e8e7e7;
-    color: #555;
+    background-color: white;
+    color: #0d0d0d;
 }
 /* Side-link */
 .side-link h3{
@@ -193,6 +189,7 @@ body {
 }
 .news-info a:hover{
     text-decoration: underline;
+    color: red;
 }
 .news-info p{
     font-size: 10px;
@@ -202,9 +199,9 @@ body {
 
 /* Bagian footer */
 .footer {
-    text-align: center;
+    text-align: left;
     padding: 5px;
-    background-color: #333;
+    background-color: #1b1919;
     color: white;
     margin-top: 20px;
 }
@@ -252,5 +249,6 @@ body {
 .footer-copyright {
     font-size: 12px;
     margin-top: 20px;
-    color: #bbb;      
+    color: #bbb;  
+    text-align: center;    
 }
