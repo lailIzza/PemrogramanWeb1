@@ -85,20 +85,25 @@
         $hutang2 = 9500000;
         $bunga2 = 4.5/100;
 
-        $jumlahhutang1 = $hutang1 + ($hutang1 * $bunga1);
-        $jumlahhutang2 = $hutang2 + ($hutang2 * $bunga2);
+        // Hitung bunga masing-masing hutang
+        $bunga_hutang1 = $hutang1 * $bunga1;
+        $bunga_hutang2 = $hutang2 * $bunga2;
 
-        //hasil
-        echo "Jumlah sisa uang adalah = Rp. ";
-        echo ($pemasukan -($jumlahhutang1 + $jumlahhutang2));
-        echo "<br>";
+        // Jumlah hutang setelah ditambah bunganya
+        $jumlahhutang1 = $hutang1 + $bunga_hutang1;
+        $jumlahhutang2 = $hutang2 + $bunga_hutang2;
 
-        echo "Jumlah total bunga hutang adalah = Rp. ";
-        echo ($hutang1 * $bunga1) + ($hutang2 * $bunga2);
-        echo "<br>";
+        //sisa uang setelah dikurangi hutang dan bunganya
+        $sisa_uang = $pemasukan - ($jumlahhutang1 + $jumlahhutang2);
+        echo "Jumlah sisa uang adalah = Rp. " . number_format($sisa_uang, 0, ',', '.') . "<br>";
 
-        echo "Jumlah total hutang adalah = Rp. ";
-        echo $jumlahhutang1 + $jumlahhutang2;
+        //jumlah total bunga hutang
+        $total_bunga_hutang = $bunga_hutang1 + $bunga_hutang2;
+        echo "Jumlah total bunga hutang adalah = Rp. " . number_format($total_bunga_hutang, 0, ',', '.') . "<br>";
+
+        //jumlah total hutang, termasuk bunganya
+        $total_hutang = $jumlahhutang1 + $jumlahhutang2;
+        echo "Jumlah total hutang adalah = Rp. " . number_format($total_hutang, 0, ',', '.');
 
     ?>
 </body>
