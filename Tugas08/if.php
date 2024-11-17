@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Penggunan IF dalam PHP</title>
+    <title>IF dalam PHP</title>
 </head>
 <body>
     <h1>Lucky.my</h1>
@@ -26,9 +26,10 @@
         echo"<p>Nomer kartu dengan seri : $bb</p>";
         if ($bb == 18634) {
             echo "<p>Selamat, anda mendapatkan hadiah utama.</p>";
-        } else {
-            echo "<p>Maaf, sepertinya anda kurang beruntung.</p>";
         }
+        // else {
+        //     echo "<p>Maaf, sepertinya anda kurang beruntung.</p>";
+        // } 
     }
     ?>
 </body>
