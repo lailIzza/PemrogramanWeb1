@@ -1,11 +1,13 @@
 <?php
 
+echo"<h2>Perulangan For</h2>";
 // perulangan for
 for ($i = 0; $i < 10; $i++){
-    echo "<h2>Ini perulangan ke-$i</h2>";
+    echo "<h3>Ini perulangan ke-$i</h3>";
 }
 
 echo"<hr>";
+echo"<h3>Perulangan While</h3>";
 // perulangan while
 $ulangi = 0;
 
@@ -15,6 +17,7 @@ while($ulangi < 10){
 }
 
 echo"<hr>";
+echo"<h3>Perulangan do While</h3>";
 // perulangan do while
 $ulangi = 10;
 
@@ -23,7 +26,9 @@ do {
     $ulangi--;
 } while ($ulangi > 0);
 
+
 echo"<hr>";
+echo"<h3>Perulangan foreach</h3>";
 //perulangan foreach
 $books = [
     "Panduan Belajar PHP untuk Pemula",
@@ -40,6 +45,7 @@ foreach($books as $buku){
 echo "</ul>";
 
 echo"<hr>";
+echo"<h3>Perulangan Bersarang</h3>";
 // perulangan bersarang 1
 for($i = 0; $i < 5; $i++){
     for($j = 0; $j < 10; $j++){
