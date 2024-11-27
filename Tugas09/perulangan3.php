@@ -10,18 +10,18 @@ for ($i = 0; $i < strlen($angka); $i++) {
     }
 }
 
+echo"-------------------------------------\n";
 echo "Jumlah total digit = " . $totalDigit . "\n";
 
-// tambahkan validasi input
+// validasi input, jika pengguna salah memasukan yang bukan angka
 if (!ctype_digit($angka)) {
     echo "Peringatan: Input tidak sepenuhnya angka.\n";
 }
 
-// tambahkan fitur untuk mengulangi input
-$ulangi = readline("Apakah ingin mengulangi? (y/n): ");
+// fitur untuk mengulangi input
+$ulangi = readline("Apakah ingin mengulangi? (y/t): ");
 if (strtolower($ulangi) == 'y') {
     // panggil script ini lagi
-    include __FILE
+    include __FILE__;
     }
-
 ?>
