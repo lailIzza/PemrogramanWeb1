@@ -1,5 +1,6 @@
 <?php
 do {
+    echo"-------------------------------------\n";
     $angka = readline("Silahkan masukan angka: ");
     $totalDigit = 0;
 
@@ -10,7 +11,6 @@ do {
         }
     }
 
-    echo"-------------------------------------\n";
     echo "Jumlah total digit = " . $totalDigit . "\n";
 
     // validasi input, jika pengguna salah memasukan yang bukan angka
@@ -22,6 +22,7 @@ do {
     $ulangi = readline("Apakah ingin mengulangi? (y/t): ");
 }   while (strtolower($ulangi) == 'y');
 
+echo"---------------------------------------\n";
 echo "Program selesai. Terima kasih!\n";
 echo"---------------------------------------\n";
 ?>
