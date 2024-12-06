@@ -7,9 +7,22 @@
     <title>Home</title>
 </head>
 <body>
-    <h1>Ssitem Informasi Sekolah</h1>
+    <h1>Sitem Informasi Sekolah</h1>
     <h2>SMK Unipdu</h2>
     <a href="data_siswa.php">Daftar Siswa</a><br>
     <a href="tambah_siswa.php">Pendaftaran</a>
+
+    <!-- notifikasi dari tambah_siswa.php -->
+    <?php if(isset($_GET['status'])): ?>
+    <p>
+        <?php
+            if($_GET['status'] == 'sukses'){
+                echo "Pendaftaran siswa baru berhasil!";
+            } else {
+                echo "Pendaftaran gagal!";
+            }
+        ?>
+    </p>
+    <?php endif; ?>
 </body>
 </html>
